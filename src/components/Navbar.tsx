@@ -7,6 +7,9 @@ const routes = [
   { href: "/srp", label: "Single Responsibility Principle" },
   { href: "/conditional-hooks", label: "Conditional Hooks" },
   { href: "/example1", label: "Example1" },
+  { href: "/children-example", label: "Children Example" },
+  { href: "/container", label: "Container Pattern" },
+  { href: "/error-boundary", label: "Error Boundary" },
 ];
 
 export default function Navbar() {

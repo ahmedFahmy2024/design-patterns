@@ -8,11 +8,11 @@ export default function ConditionalHooks() {
 }
 
 function Dialog({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
-  const elemntRef = useRef<HTMLDivElement | null>(null);
+  const elementRef = useRef<HTMLDivElement | null>(null);
 
-  useOutsideClick(isOpen, elemntRef, () => onClose());
+  useOutsideClick(isOpen, elementRef, () => onClose());
 
-  return isOpen ? <div ref={elemntRef} role="dialog" /> : null;
+  return isOpen ? <div ref={elementRef} role="dialog" /> : null;
 }
 
 // in React you must not call hooks conditionally inside components
